@@ -1,1 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
 
+.colour{
+    color: rgb(15, 100, 120)
+}
+
+/*Footer*/
+
+ /*Redes sociales*/
+ .social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.social-icons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #f8f9fa;
+    transition: background-color 0.3s ease;
+}
+.social-icons a:hover {
+    background-color: #e9ecef;
+}
+.social-icons svg {
+    width: 20px;
+    height: 20px;
+    fill: #6c757d;
+}
+
+/*Fin Footer*/

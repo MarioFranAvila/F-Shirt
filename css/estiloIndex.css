@@ -1,1 +1,175 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
 
+.colour{
+    color: rgb(15, 100, 120)
+}
+
+main{
+    margin-bottom: 6em;
+}
+
+/*Inicio hero*/
+#hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 80vh;
+    color: white;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("../img/Hero.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    
+  }
+
+  #hero h1{
+    font-size: 4em;
+    
+  }
+
+/*Fin hero*/
+
+/*Inicio quienes somos*/
+#somos{
+    background-color: rgb(236,240,241);
+}
+
+#somos .container{
+    text-align: center;
+    padding: 80px 15px;
+}
+
+#somos h2{
+    font-weight: bold;
+}
+/*Fin quienes somos*/
+
+/* Carrusel Marcas*/
+.Marcas {
+    max-width: 50em; 
+    margin: 0 auto; 
+    overflow: hidden; 
+    padding-top: 2em;
+    padding-bottom: 6em;
+  }
+  
+  .carousel-inner img {
+    width: 100%; 
+    height: auto; 
+    filter: brightness(0.6);
+  }
+
+  .carousel-inner h5 p{
+    color: black;
+  }
+
+  .tituloCarrusel h2{
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 0.5em;
+    padding-top: 1.7em;
+    align-items: center;
+}
+
+/*Grafico*/
+
+.grafic h2{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 20px;
+    font-weight: bold;
+    margin-top: 2em;
+}
+
+.grafic {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 100%; /* Limita el ancho máximo */
+    margin: 0 auto; /* Centra el contenedor */
+    background-color: rgb(236,240,241);
+  }
+  
+  #grafico-MasVendidas {
+    width:100%;
+    height: 30em; 
+    max-height: 70vh;
+  }
+
+
+
+
+/*Fin Gráfico*/
+
+/*Responsivo*/
+@media (min-width: 850px){
+/*Inicio Quienes Somos*/
+#somos .container{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#somos .texto{
+    width: 70%;
+    text-align: justify;
+    max-width: 700px;
+    display: flex;
+    padding-left: 60px;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#somos h2{
+    margin-top: 0px;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+#somos p{
+    font-size: 22px;
+}
+
+#somos .imgsomos{
+    background-image:url("/F-Shirt/img/Identidad.jpg");
+    background-size: cover;
+    background-position: center center;
+    height: 500px;
+    width: 400px;
+}
+/*Fin Quienes Somos*/
+
+/*Gráfico*/
+
+.grafic {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 100%; /* Limita el ancho máximo */
+  
+    background-color: rgb(236,240,241);
+  }
+  
+  #grafico-MasVendidas {
+    width:100%;
+    height: 30em; 
+    max-height: 70vh;
+  }
+
+}
