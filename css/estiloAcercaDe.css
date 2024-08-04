@@ -1,0 +1,134 @@
+.resaltar{
+    color: rgb(15, 100, 120);
+    font-weight: bold;
+}
+
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+main{
+   padding-bottom: 0;
+   margin-bottom: 0;
+}
+
+/*Encabezado*/
+.encabezado h1{
+    text-align: center;
+    padding-top: 1em;
+    padding-bottom: 0;
+}
+
+.encabezado p{
+    text-align: center;
+    padding-top: 0;
+    font-size: 1.3em;
+}
+
+.encabezado{
+    padding-top: 3em;
+    padding-bottom: 5em;
+}
+
+/*End Encabezado*/
+
+/*Estilo general de los cards*/
+.Card{
+  padding-bottom: 3em;
+  padding-top: 3em;
+}
+
+.nombre{
+    text-align: center;
+    font-size: 1.5em;
+    padding-bottom: 0;
+    margin: 0;
+}
+
+.profesion{
+    padding-top: 0;
+    text-align: center;
+}
+
+.imagenPerfil img{
+    margin: auto;
+    display: flex;
+    width: 15em;
+}
+
+.information{
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+ /*Redes sociales*/
+.Card .social-icons {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 1rem;
+    margin-left: 0.5em;
+   
+}
+.Card .social-icons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #f8f9fa;
+    transition: background-color 0.3s ease;
+}
+.Card .social-icons a:hover {
+    background-color: #e9ecef;
+}
+.Card .social-icons svg {
+    width: 20px;
+    height: 20px;
+    fill: #6c757d;
+}
+
+/*Estilo Card Joshua*/
+.Joshua{
+    background-color: rgb(15, 120, 100);
+    color: white;
+}
+
+.Joshua .social-icons a:hover {
+    background-color: rgb(0, 0, 0);
+}
+
+/*Estilo Card Mario*/
+.Mario{
+    background-color: rgb(236,240,241);
+    color: black;
+}
+
+/*Redes sociales*/
+.Card .social-icons {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 1rem;
+    padding-left: 0.5em;
+   
+}
+.Mario .social-icons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #000000;
+    transition: background-color 0.3s ease;
+}
+.Mario .social-icons a:hover {
+    background-color: rgb(44, 62, 80);
+}
+.Mario .social-icons svg {
+    width: 20px;
+    height: 20px;
+    fill: rgb(255, 255, 255);
+}

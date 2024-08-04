@@ -1,0 +1,87 @@
+.resaltar{
+    color: rgb(15, 100, 120);
+    font-weight: bold;
+}
+/*header {
+    position: fixed; 
+    top: 0; 
+    width: 100%; 
+    z-index: 1000; 
+}*/
+
+/*Encabezado*/
+main h1{
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    align-items: center;
+    padding: 1em;
+   /* padding-top: 2em;*/
+}
+
+main{
+    padding-bottom: 5em;
+}
+
+/*Encabezado*/
+
+/*Acordeon*/
+.FAQ{
+    width: 80%;
+    margin: auto;
+}
+
+/*End Acordeon*/
+
+/*FAQ*/
+.FAQ4 img{
+    width: 40%;
+    height: 50%;
+}
+
+.FAQ4{
+    display: flex;
+    justify-content: center;
+}
+
+.SocialMediaFAQ .social-icons{
+    padding-top: 1em;
+}
+
+.SocialMediaFAQ .social-icons {
+    justify-content: left;
+    align-items: center;
+    gap: 1rem;
+}
+
+.SocialMediaFAQ .social-icons a {
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #f8f9fa;
+    transition: background-color 0.3s ease;
+}
+.SocialMediaFAQ .social-icons a:hover {
+    background-color: #e9ecef;
+}
+.SocialMediaFAQ .social-icons svg {
+    width: 20px;
+    height: 20px;
+    fill: rgb(15, 100, 120);
+}
+
+/*End FAQ*/
+
+/*Media for PC*/
+@media (min-width: 850px){
+/*FAQ-FAQ4*/
+.FAQ4 img{
+    width: 30%;
+    height: 40%;
+}
+
+
+}
