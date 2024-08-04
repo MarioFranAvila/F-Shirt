@@ -145,7 +145,7 @@ main{
 }
 
 #somos .imgsomos{
-    background-image:url("/F-Shirt/img/Identidad.jpg");
+    background-image:url("../img/Identidad.jpg");
     background-size: cover;
     background-position: center center;
     height: 500px;
