@@ -1,0 +1,473 @@
+.conteiner-info{
+  display: flex;
+}
+
+.imagen{
+  padding-top: 50px;
+  padding-left: 150px;
+}
+
+.imagen img{
+  width: 550px;
+  height: 80%;
+  justify-content: end;
+}
+
+.informacion{
+  padding-left: 100px;
+  padding-top: 50px;
+  color: white;
+  background-image: linear-gradient(
+      0deg,
+      rgba(0,0,0,0.7),
+      rgba(0,0,0,0.7)
+  )
+  ,url("../img/heroContacto.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.informacion iframe{
+  padding: 6px;
+  margin-bottom: 120px;
+  margin-top: 50px;
+  border-radius: 2px solid white;
+  background-color: #fff;
+}
+
+.informacion h1{
+  font-size: 35px;
+  padding: 0.2em;
+}
+
+.informacion h3{
+  color: rgb(206, 232, 255);
+  padding: 0.2em;
+}
+
+.informacion h2{
+font-size: 32px;
+}
+
+.informacion a{
+  text-decoration: none;
+}
+
+/**/
+
+.formulario{
+  padding-left: 100px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+
+}
+
+.formulario h1{
+  font-size: 35px;
+}
+
+.formulario .input-nombre{
+  position: relative;
+  padding: 20px 1px;
+  margin-bottom: 30px;
+  margin-top: 10px;
+}
+
+.formulario .input-nombre input{
+  width: 350px;
+  height: 60px;
+  border-radius: 4px;
+  font-size: 15px;
+  padding: 0 15px;
+  border: 2px solid rgb(44, 62, 80);
+  background: transparent;
+  color: black;
+  outline: none;
+}
+
+.formulario .input-nombre label{
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
+  color: rgb(44, 62, 80);
+  font-weight: bold;
+  font-size: 18px;
+  pointer-events: none;
+  transition: .3s;
+}
+
+.formulario .input-nombre > input:focus + label,
+.formulario .input-nombre > input:valid + label {
+  left: 16px;
+  padding: 0 2px;
+  top: 0;
+  background-color: white;
+}
+
+/**/
+.formulario .input-identificacion{
+  position: relative;
+  padding: 20px 1px;
+  margin-bottom: 30px;
+}
+
+.formulario .input-identificacion input{
+  width: 350px;
+  height: 60px;
+  border-radius: 4px;
+  font-size: 15px;
+  padding: 0 15px;
+  border: 2px solid rgb(44, 62, 80);
+  background: transparent;
+  color: black;
+  outline: none;
+}
+
+.formulario .input-identificacion label{
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
+  color: rgb(44, 62, 80);
+  font-weight: bold;
+  font-size: 18px;
+  pointer-events: none;
+  transition: .3s;
+}
+
+.formulario .input-identificacion > input:focus + label,
+.formulario .input-identificacion > input:valid + label {
+  left: 16px;
+  padding: 0 2px;
+  top: 0;
+  background-color: white;
+}
+
+/**/
+.formulario .input-correo{
+  position: relative;
+  padding: 20px 1px;
+  margin-bottom: 30px;
+}
+
+.formulario .input-correo .error-message {
+display: none;
+color: #e74c3c;
+font-size: 14px;
+margin-top: 5px;
+position: absolute;
+bottom: -20px;
+left: 0;
+}
+
+.formulario .input-correo input:invalid + label + .error-message {
+display: block;
+}
+
+.formulario .input-correo input{
+  width: 350px;
+  height: 60px;
+  border-radius: 4px;
+  font-size: 15px;
+  padding: 0 15px;
+  border: 2px solid rgb(44, 62, 80);
+  background: transparent;
+  color: black;
+  outline: none;
+}
+
+.formulario .input-correo label{
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
+  color: rgb(44, 62, 80);
+  font-weight: bold;
+  font-size: 18px;
+  pointer-events: none;
+  transition: .3s;
+}
+
+.formulario .input-correo > input:focus + label,
+.formulario .input-correo > input:valid + label {
+  left: 16px;
+  padding: 0 2px;
+  top: 0;
+  background-color: white;
+}
+
+.formulario .input-correo input:focus + label,
+.formulario .input-correo input.has-content + label {
+  top: 0;
+  transform: translateY(-50%);
+  background-color: white;
+}
+
+/**/
+.formulario .input-telefono{
+position: relative;
+padding: 20px 1px;
+margin-bottom: 30px;
+}
+
+
+.formulario .input-telefono input{
+width: 350px;
+height: 60px;
+border-radius: 4px;
+font-size: 15px;
+padding: 0 15px;
+border: 2px solid rgb(44, 62, 80);
+background: transparent;
+color: black;
+outline: none;
+}
+
+.formulario .input-telefono label{
+position: absolute;
+top: 50%;
+left: 15px;
+transform: translateY(-50%);
+color: rgb(44, 62, 80);
+font-weight: bold;
+font-size: 18px;
+pointer-events: none;
+transition: .3s;
+}
+
+.formulario .input-telefono > input:focus + label,
+.formulario .input-telefono > input:valid + label {
+left: 16px;
+padding: 0 2px;
+top: 0;
+background-color: white;
+}
+
+.formulario .input-telefono input:focus + label,
+.formulario .input-telefono input.has-content + label {
+top: 0;
+transform: translateY(-50%);
+background-color: white;
+}
+
+/**/
+.formulario .input-mensaje{
+  position: relative;
+  padding: 20px 1px;
+  margin-bottom: 30px;
+}
+
+.formulario .input-mensaje input{
+  width: 350px;
+  height: 60px;
+  border-radius: 4px;
+  font-size: 15px;
+  padding: 0 15px;
+  border: 2px solid rgb(44, 62, 80);
+  background: transparent;
+  color: black;
+  outline: none;
+}
+
+.formulario .input-mensaje label{
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
+  color: rgb(44, 62, 80);
+  font-weight: bold;
+  font-size: 18px;
+  pointer-events: none;
+  transition: .3s;
+}
+
+.formulario .input-mensaje > input:focus + label,
+.formulario .input-mensaje > input:valid + label {
+  left: 16px;
+  padding: 0 2px;
+  top: 0;
+  background-color: white;
+}
+
+/*Genero*/
+
+:focus {
+  outline: 0;
+  border-color: rgb(44, 62, 80);
+  box-shadow: 0 0 0 4px rgb(198, 215, 231);
+}
+
+.genero div {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 0.5rem;
+  justify-content: center;
+}
+
+.genero input[type="radio"] {
+  clip: rect(0 0 0 0);
+  clip-path: inset(100%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.genero input[type="radio"]:checked + span {
+  box-shadow: 0 0 0 0.0625em rgb(44, 62, 80);
+  background-color: rgb(205, 220, 235);
+  z-index: 1;
+  color: rgb(44, 62, 80);
+}
+
+.genero #labelGenero{
+  color: rgb(44, 62, 80);
+  font-weight: bold;
+  font-size: 20px;
+}
+
+label span {
+  display: block;
+  cursor: pointer;
+  background-color: #fff;
+  padding: 0.375em .75em;
+  position: relative;
+  margin-left: .0625em;
+  box-shadow: 0 0 0 0.0625em rgb(44, 62, 80);
+  letter-spacing: .05em;
+  color: rgb(44, 62, 80);
+  text-align: center;
+  transition: background-color .5s ease;
+}
+
+label:first-child span {
+  border-radius: .375em 0 0 .375em;
+}
+
+label:last-child span {
+  border-radius: 0 .375em .375em 0;
+}
+
+/*Fecha*/
+.formulario .input-fecha {
+  position: relative;
+  padding: 20px 0;
+}
+
+.formulario .input-fecha input {
+  width: 200px;
+  height: 40px;
+  border-radius: 4px;
+  font-size: 16px;
+  padding: 20px 10px;
+  margin-top: 60px;
+  border: 2px solid rgb(44, 62, 80);
+  background: transparent;
+  color: black;
+  outline: none;
+}
+
+.formulario .input-fecha label {
+  position: absolute;
+  margin-top: 30px;
+  top: 30px;
+  left: 10px;
+  color: rgb(44, 62, 80);
+  font-weight: bold;
+  font-size: 16px;
+  pointer-events: none;
+  transition: .3s;
+}
+
+.formulario .input-fecha #labelFecha{
+color: rgb(44, 62, 80);
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.formulario .input-fecha input:focus + label,
+.formulario .input-fecha input:not(:placeholder-shown) + label {
+  top: 0;
+  font-size: 14px;
+  background-color: white;
+  padding: 0 5px;
+}
+
+.formulario .input-fecha input:focus {
+  border-color: #3498db;
+}
+
+.formulario .input-fecha .error-message {
+display: none;
+color: #e74c3c;
+font-size: 14px;
+margin-top: 5px;
+}
+
+.formulario .input-fecha input:invalid ~ .error-message {
+display: block;
+}
+
+/* Botones */
+button {
+  /* Variables */
+  --button_radius: 0.75em;
+  --button_color: white;
+  --button_outline_color: rgb(44, 62, 80);
+  font-size: 17px;
+  font-weight: bold;
+  border: none;
+}
+
+.button_top {
+  display: block;
+  box-sizing: border-box;
+  border: 2px solid var(--button_outline_color);
+  border-radius: var(--button_radius);
+  padding: 0.75em 1.5em;
+  background: var(--button_color);
+  color: var(--button_outline_color);
+  transform: translateY(-0.2em);
+  transition: transform 0.1s ease;
+}
+
+button:hover .button_top {
+  /* Pull the button upwards when hovered */
+  transform: translateY(-0.33em);
+}
+
+button:active .button_top {
+  /* Push the button downwards when pressed */
+  transform: translateY(0);
+}
+
+.botones{
+  padding-bottom: 70px;
+}
+
+@media (max-width: 850px) {
+  .informacion{
+    padding-left: 20px;
+  }
+
+  .informacion iframe{
+    margin-bottom: 120px;
+    margin-top: 50px;
+    border-radius: 2px solid white;
+    background-color: #fff;
+  }
+
+  .formulario{
+    padding-left: 10px;
+  }
+
+  .imagen{
+    display: none;
+  }
+}
