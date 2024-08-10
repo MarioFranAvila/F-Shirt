@@ -1,0 +1,620 @@
+
+
+/*Galeria de imagenes*/
+.galeria {
+    align-items: center;
+    padding: 2em;
+   
+}
+
+    
+    .product {
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    
+    .img-container {
+        width: 100%;
+        max-width: 600px;
+        overflow: hidden;
+        border-radius: 8px;
+    }
+    
+    .img-container img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+    
+    /*Cars pequeñas*/
+    .product-small-img {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+        width: 100%;
+        max-width: 600px;
+    }
+    
+    .product-small-img img {
+        width: 20%; 
+        max-width: 100px;
+        height: auto;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: transform 0.3s ease;
+    }
+    
+    .product-small-img img:hover {
+        transform: scale(1.1); 
+    }
+    /*End imagenes del producto*/
+    
+    /*Sección de información*/
+    .informatioSection{
+        padding-top: 1em;
+    }
+
+    .informatioSection h2{
+        margin-left: 1em;
+    }
+
+    #price{
+        padding-left: 2.3em;
+        color: rgb(15, 120, 100);
+        font-weight: bold;
+        padding-bottom: 1em;
+    }
+
+    #stock{
+        margin-left: 2em;
+        padding-bottom: 1em;
+    }
+
+    #tallaTitle{
+        margin-left: 2em;
+        font-weight: bold;
+        margin-bottom: 0;
+    }
+
+
+    #entrega{
+        margin-left: 2em;
+        font-weight: bold;
+        padding-top: 1em;
+        padding-bottom: 0.5em;
+    }
+
+    #selectorEntrega{
+       margin-left: 2em;
+       padding-bottom: 0.5em;
+
+    }
+
+    #infoEntrega{
+        margin-left: 2em;
+        padding-bottom: 1.5em;
+    }
+
+    #boton{
+        margin-left: 2em;
+    
+    }
+
+    .add-to-cart-btn {
+        background-color: rgb(44, 62, 80);
+        border: none;
+        color: white;
+        padding: 1em 6em;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        cursor: pointer;
+        border-radius: 4px;
+        transition: background-color 0.3s;
+    }
+
+    .add-to-cart-btn:hover {
+        background-color: rgb(30, 53, 77);
+    }
+
+    #Enlaces{
+        margin-left: 2em;
+        margin-top: 1.5em;
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    /*End sección de información*/
+
+    /*Inicio input tallas*/
+    /*tallas*/
+
+  .tallas :focus {
+    outline: 0;
+    border-color: rgb(44, 62, 80);
+    box-shadow: 0 0 0 4px rgb(198, 215, 231);
+  }
+  
+  .tallas div {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 0.5rem;
+    justify-content: left;
+    padding-left: 2em;
+    padding-bottom: 1em;
+  }
+  
+  .tallas input[type="radio"] {
+    clip: rect(0 0 0 0);
+    clip-path: inset(100%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+  }
+  
+  .tallas input[type="radio"]:checked + span {
+    box-shadow: 0 0 0 0.0625em rgb(44, 62, 80);
+    background-color: rgb(0, 0, 0);
+    z-index: 1;
+    color: rgb(255, 255, 255);
+  }
+  
+  .tallas label span {
+    display: block;
+    cursor: pointer;
+    background-color: #fff;
+    padding: 0.375em .75em;
+    position: relative;
+    margin-left: .0625em;
+    box-shadow: 0 0 0 0.0625em rgb(44, 62, 80);
+    letter-spacing: .05em;
+    color: rgb(44, 62, 80);
+    text-align: center;
+    transition: background-color .5s ease;
+  }
+  
+  .tallas label:first-child span {
+    border-radius: .375em 0 0 .375em;
+  }
+  
+  .tallas label:last-child span {
+    border-radius: 0 .375em .375em 0;
+  }
+
+    /*End input tallas*/
+
+    /*Inicio entrega*/
+      #selectorEntrega :focus {
+        outline: 0;
+        border-color: rgb(44, 62, 80);
+        box-shadow: 0 0 0 4px rgb(198, 215, 231);
+      }
+      
+      #selectorEntrega div {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 0.5rem;
+      }
+      
+      #selectorEntrega input[type="radio"] {
+        clip: rect(0 0 0 0);
+        clip-path: inset(100%);
+        height: 1px;
+        overflow: hidden;
+        position: absolute;
+        white-space: nowrap;
+        width: 1px;
+      }
+      
+      #selectorEntrega input[type="radio"]:checked + span {
+        box-shadow: 0 0 0 0.0625em rgb(44, 62, 80);
+        background-color: rgb(205, 220, 235);
+        z-index: 1;
+        color: rgb(44, 62, 80);
+      }
+      
+      #selectorEntrega label span {
+        display: block;
+        cursor: pointer;
+        background-color: #fff;
+        padding: 0.375em .75em;
+        position: relative;
+        margin-left: -1px;
+        box-shadow: 0 0 0 0.0625em rgb(44, 62, 80);
+        letter-spacing: .05em;
+        color: rgb(44, 62, 80);
+        text-align: center;
+        transition: background-color .5s ease;
+      }
+      
+      #selectorEntrega label:first-child span {
+        border-radius: .375em 0 0 .375em;
+        margin-left: 0;
+      }
+      
+      #selectorEntrega label:last-child span {
+        border-radius: 0 .375em .375em 0;
+      }
+    /*Fin entrega*/
+
+
+    
+
+    /*
+    *
+    *
+    *
+    *
+    *
+    */
+    /*Estilos dentro del tab*/
+
+    .containerOpinion{
+        padding: 30px 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    
+    .containerOpinion h1{
+        font-size: 3.2em;
+        color: rgb(44, 62, 80);
+        margin-bottom: 50px;
+    }
+    
+    .containerOpinion h2{
+        font-size: 2em;
+    }
+
+/*Reseñas*/
+.calificaciones{
+    padding: 30px 40px;
+}
+.calificaciones h2{
+    margin-bottom: 50px;
+}
+
+#reseñas-container {
+    display: flex;
+    flex-wrap: wrap;  /* Permite que las reseñas se envuelvan en una nueva línea si no caben en una fila */
+    gap: 20px;        /* Espacio entre las reseñas */
+}
+
+.reseña {
+    flex: 1 1 calc(33.333% - 40px);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+
+/*
+*
+*
+*
+*
+*
+*
+*/ 
+
+/*Descripcion*/
+
+.containerDescripcion{
+    display: flex;
+    flex-direction: column;
+    padding: 30px 40px;
+    justify-content: space-evenly;
+}
+
+.containerDescripcion h4 {
+    color: rgb(44, 62, 80);
+    font-size: 35px;
+}
+
+.containerDescripcion p{
+    font-size: 18px;
+}
+
+
+
+/*Danos tu opinión*/
+
+
+/*Input*/
+.formulario .input-nombre{
+    position: relative;
+    padding: 20px 1px;
+}
+
+.formulario .input-nombre input{
+    width: 350px;
+    height: 60px;
+    border-radius: 4px;
+    font-size: 15px;
+    padding: 0 15px;
+    border: 2px solid rgb(44, 62, 80);
+    background: transparent;
+    color: black;
+    outline: none;
+}
+
+.formulario .input-nombre label{
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    color: rgb(44, 62, 80);
+    font-weight: bold;
+    font-size: 18px;
+    pointer-events: none;
+    transition: .3s;
+}
+
+.formulario .input-nombre > input:focus + label,
+.formulario .input-nombre > input:valid + label {
+    left: 16px;
+    padding: 0 2px;
+    top: 0;
+    background-color: white;
+}
+
+/*Input Mensaje*/
+
+.formulario .input-mensaje{
+    position: relative;
+    padding: 20px 1px;
+}
+
+.formulario .input-mensaje input{
+    width: 350px;
+    height: 60px;
+    border-radius: 4px;
+    font-size: 15px;
+    padding: 0 15px;
+    border: 2px solid rgb(44, 62, 80);
+    background: transparent;
+    color: black;
+    outline: none;
+}
+
+.formulario .input-mensaje label{
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    color: rgb(44, 62, 80);
+    font-weight: bold;
+    font-size: 18px;
+    pointer-events: none;
+    transition: .3s;
+}
+
+.formulario .input-mensaje > input:focus + label,
+.formulario .input-mensaje > input:valid + label {
+    left: 16px;
+    padding: 0 2px;
+    top: 0;
+    background-color: white;
+}
+
+/*Botón*/
+button {
+    font-size: 17px;
+    font-weight: bold;
+    border: none;
+}
+
+.botonEnviar {
+    border: none;
+    display: block;
+    box-sizing: border-box;
+    border: 2px solid rgb(44, 62, 80);
+    border-radius: 0.75em;
+    padding: 0.75em 1.5em;
+    background: white;
+    color: rgb(44, 62, 80);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Estilo para el hover */
+button:hover .botonEnviar {
+    background: rgb(44, 62, 80);
+    color: white;
+}
+
+
+/*Estrellas valoración*/
+.rating {
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+}
+
+.rating:not(:checked) > input {
+    position: absolute;
+    appearance: none;
+}
+
+.rating:not(:checked) > label {
+    cursor: pointer;
+    font-size: 50px;
+    color: #666;
+}
+
+.rating:not(:checked) > label::before {
+    content: '★';
+}
+
+.rating > input:checked + label:hover,
+.rating > input:checked + label:hover ~ label,
+.rating > input:checked ~ label:hover,
+.rating > input:checked ~ label:hover ~ label, 
+.rating > label:hover ~ input:checked ~ label {
+    color: #e58e09;
+}
+
+.rating:not(:checked) > label:hover,
+.rating:not(:checked) > label:hover ~ label {
+    color: #ff9e0b;
+}
+
+.rating > input:checked ~ label {
+    color: #ffa723;
+}
+
+.rating-json label {
+    cursor: default;
+    pointer-events: none;
+}
+
+.reseña .estrella {
+    font-size: 40px;
+    margin-right: 2px;
+}
+
+/*Estilos del tab-nav y tab*/
+.nav-tabs {
+    margin-top: 50px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #f9f9f9; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.tab-content .tab-pane {
+    margin-bottom: 50px;
+    border: 1px solid #ddd; 
+    border-radius: 10px; 
+    background-color: #f9f9f9; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+
+    @media (min-width: 850px) {
+        .galeria {
+            display: flex;
+            align-items: center;
+            padding: 2em;
+           
+        }
+
+        .product-small-img img {
+            width: 40%; 
+            max-width: 90px;
+        }
+        .product-small-img {
+            justify-content: left;
+         }
+
+         .img-container img {
+            max-height: 30em;
+          
+        }
+
+/*End Galería de imagenes*/
+
+
+/*Tab resposivo*/
+/*Estilos del tab-nav y tab*/
+.nav-tabs {
+    margin: 0 20px;
+    padding: 0 10px;
+    margin-top: 50px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #f9f9f9; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.tab-content .tab-pane {
+    margin: 0 20px; 
+    padding: 0 20px; 
+    margin-bottom: 50px;
+    border: 1px solid #ddd; 
+    border-radius: 10px; 
+    background-color: #f9f9f9; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+/*End Tab responsivo*/
+
+/*Contenido Tab*/
+.containerDescripcion{
+    display: flex;
+    flex-direction: row;
+    padding: 30px 40px;
+    justify-content: space-evenly;
+    
+}
+
+.containerD{
+    max-width: 50%;
+}
+
+.containerOpinion{
+    padding: 30px 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+/*Contenido Tab*/
+
+
+
+
+
+
+
+
+/*Fin llave responsiva*/
+}
+
+
+@media (max-width: 440px){
+    .formulario .input-nombre input{
+        width: 280px;
+        height: 40px;
+    }
+    
+    .formulario .input-nombre label{
+        font-size: 13px;
+    }  
+
+    .formulario .input-mensaje input{
+        width: 280px;
+        height: 40px;
+    }
+    
+    .formulario .input-mensaje label{
+        font-size: 15px;
+    }
+}
+
+/*Responsividad del encabezado*/
+@media (min-width: 850px) {
+
+    .encabezado{
+        display: flex;
+    }
+
+    #price{
+        padding-left: 3em;
+    }
+
+    main .informatioSection{
+        padding-top: 2em;
+    }
+}

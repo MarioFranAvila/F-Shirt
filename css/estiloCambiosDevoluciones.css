@@ -1,0 +1,48 @@
+.resaltar{
+    color: rgb(15, 100, 120);
+    font-weight: bold;
+}
+
+main{
+ padding-bottom: 2em;
+}
+
+main h1{
+    font-size: 2em;
+    text-align: center;
+    padding-top: 2em;
+    padding-bottom: 1em;
+    margin: 0 0.5em;
+}
+main h2{
+    font-size: 1.5em;
+    margin-left: 1em;
+}
+main h5{
+    margin-left: 1em;
+}
+
+.introduccion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    padding: 0em 1.5em;
+    padding-bottom: 1.5em;
+}
+
+.introduccion p {
+    max-width: 600px; 
+}
+
+main ul{
+    margin: 0 1em;
+}
+
+.Text{
+    padding-bottom: 1.5em;
+}
+main p{
+    margin: 0 1em;
+}
+

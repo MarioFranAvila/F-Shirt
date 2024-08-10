@@ -1,0 +1,11 @@
+
+.contenedor-mapa{
+    height: 34rem;
+    width: 70%;
+    margin: 5em auto;
+    padding-bottom: 5em;
+}
+
+#map{
+    height: 100%;
+}

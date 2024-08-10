@@ -31,8 +31,89 @@
 
 /*Fin hero*/
 
+/*Estilo card*/
+.card-img-top {
+  max-height: 20em; 
+  object-position: center; 
+}
+
+
+.card {
+  max-width: 250px; 
+  margin: 0 auto; 
+  margin-bottom: 2em;
+}
+
+.card-img-top {
+  height: 250px; 
+}
+
+.card-body {
+  padding: 10px; 
+}
+
+.card-title {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.card-text {
+  font-size: 12px;
+  margin-bottom: 5px;
+}
+
+.btn {
+  padding: 5px 10px;
+  font-size: 12px; 
+}
+/*End estilo cards*/
+
+/*Filtro*/
+#filtro{
+  margin-bottom: 1rem; 
+  max-width: 80%; 
+  padding-top: 3em;
+}
+
+#filtro .form-select {
+  width: 100%; 
+}
+
+#filtro{
+ margin: 0 auto;
+}
+#filtro label{
+  color: rgb(44, 62, 80);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+
+/*End Filtro*/
+
+
 @media (min-width: 850px){
     #hero h1{
         font-size: 4em;
     }
+
+    .card {
+      max-width: 350px; 
+      margin: 0 auto; 
+      margin-bottom: 2em;
+  }
+
+  .card-img-top {
+    height: 650px; 
+}
+.card-title{
+  font-size: 20px;
+}
+
+.card-text {
+  font-size: 17px;
+}
+
+
 }
