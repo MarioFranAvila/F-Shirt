@@ -62,7 +62,7 @@ function mostrarCarrito() {
     });
 
     listaHTML += `</ul> </div>`;
-    listaHTML += `<p id="TextTotal">Total (incluyendo envío): <span id="totalConEnvio">₡${formatNumber(datosCompra.totalApagar)}</span></p>`;
+    listaHTML += `<p id="TextTotal">Total (incluyendo envío):<br> <span id="totalConEnvio">₡${formatNumber(datosCompra.totalApagar)}</span></p>`;
 
     contenedorCarrito.innerHTML = listaHTML;
 }
