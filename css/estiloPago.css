@@ -1,0 +1,245 @@
+.containerPago{
+    display: flex;
+    flex-direction: row;
+    margin: 3em 4em;
+    justify-content: space-between;
+}
+
+.comboBoxes{
+    display: flex;
+    flex-direction: row;
+}
+
+/*
+*
+*
+*
+*
+*Información de la compra
+*
+*
+*
+*/
+#infoCliente h2{
+  font-size: 2.5em;
+  font-weight: bold;
+  color: rgb(15, 120, 100);
+}
+
+#infoCliente{
+  margin-left: 1em;
+  margin-top: 3em;
+}
+
+.infoTarjeta h2{
+  font-size: 2.5em;
+  font-weight: bold;
+  color: rgb(15, 120, 100);
+}
+
+.infoTarjeta{
+    margin-left: 1em;
+    margin-top: 3em;
+  }
+
+  #VISA{
+    height: 50px;
+    width: 60px;
+    display: none;
+  }
+
+  #MasterCard{
+    height: 40px;
+    width: 50px;
+    display: none;
+  }
+
+  #bin{
+    position: relative;
+    padding: 20px 1px;
+    }
+    
+    
+    #bin{
+    width: 350px;
+    height: 60px;
+    border-radius: 4px;
+    font-size: 15px;
+    padding: 0 15px;
+    border: 2px solid rgb(44, 62, 80);
+    background: transparent;
+    color: black;
+    outline: none;
+    }
+
+    
+  
+
+/*
+*
+*
+*
+*   Card de artículos
+*
+*
+*
+*/
+
+.containerArticulos{
+    margin-top: 4em;
+  }
+  
+  .containerArticulos .card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    max-width: 400px;
+  }
+  
+  .containerArticulos .titulo{
+    font-size: 2em;
+    text-align: center;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  .containerArticulos p{
+    margin-top: 10px;
+    margin-left: 10px;
+  }
+  
+  .containerArticulos .boton {
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    margin-left: 65px;
+  }
+  
+  .dentroProductos{
+    height: 300px;
+    overflow-y: auto;
+    border: 1px solid #ccc;
+  }
+  
+  .dentroProductos li {
+    border-bottom: none; /* Quita el borde sólido */
+    padding: 15px 0;
+    background-image: linear-gradient(to right, transparent, black, transparent);
+    background-position: bottom;
+    background-size: 100% 1px;
+    background-repeat: no-repeat;
+    list-style-type: none;
+  }
+  
+  .dentroProductos ul:last-child {
+    border-bottom: none;
+  }
+  
+  .dentroProductos ul{
+    gap: 0;
+  }
+  
+  .dentroProductos h1{
+    font-size: 1em;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .dentroProductos #precio{
+    font-size: 0.8em;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  
+  .dentroProductos h2{
+    font-size: 1em;
+  }
+  
+  .subtotal h2{
+    font-size: 0.8em;
+  }
+  
+  .dentroProductos br{
+    margin: 0;
+    padding: 0;
+  }
+
+  .dentroProductos ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin-left: 0;
+  }
+  
+  .dentroProductos li {
+    padding-left: 0;
+    margin-left: 20px;
+  }
+  
+  /*Fin*/
+
+
+  /*Botones
+  *
+  *
+  *
+  *
+  *
+  *
+  *
+  */
+  .boton button {
+    font-size: 17px;
+    font-weight: bold;
+    border: none;
+}
+
+.botonEnviar {
+    border: none;
+    display: block;
+    box-sizing: border-box;
+    border: 2px solid rgb(44, 62, 80);
+    border-radius: 0.75em;
+    padding: 0.75em 1.5em;
+    background: white;
+    color: rgb(44, 62, 80);
+    transition: 0.3s ease, 0.3s ease;
+}
+
+#botonPagar{
+    margin-top: 3em;
+}
+
+/* Estilo para el hover */
+.boton button:hover .botonEnviar {
+    background: rgb(44, 62, 80);
+    color: white;
+}
+
+@media (max-width: 850px) {
+    .containerPago{
+        display: flex;
+        flex-direction: column;
+        margin: 0.7em;
+        padding: 0;
+    }
+
+    #infoCliente{
+        margin-left: 0;
+        margin-top: 0;
+      }
+      
+      .infoTarjeta{
+          margin-left: 0;
+          margin-top: 0;
+        }
+
+        #MasterCard{
+            margin: 0.7em 0.7em;
+        }
+        #infoCliente{
+          padding-bottom: 1.5em;
+        }
+
+}

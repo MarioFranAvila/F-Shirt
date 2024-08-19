@@ -2,6 +2,12 @@
     color: rgb(15, 100, 120);
     font-weight: bold;
 }
+
+.resaltar a{
+    color: rgb(15, 100, 120);
+    text-decoration: none;
+}
+
 /*header {
     position: fixed; 
     top: 0; 

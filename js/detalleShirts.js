@@ -39,7 +39,15 @@ $(document).ready(async function () {
     console.log(camiseta); 
     marcarEstrellas(camiseta.reseña_usuarios.valoracion_media, 'rating-json');
     renderizarReseñas(camiseta.reseña_usuarios.reseñas, 'reseñas-container');
+
+
+    //Añadir al carrito
+    $('.add-to-cart-btn').on('click', function() {
+        aniadirCarrito(camiseta);
+    });
+
 });
+
 
 
 async function displayImages(shirt){
@@ -76,7 +84,7 @@ async function displaInfo(shirt) {
     $("#selectorEntrega").html('');
 
     $('#shirtName').html(shirt.nombre);
-    $('#price').html('₡ '+shirt.precio);
+    $('#price').html('₡ '+formatPrecio(shirt.precio));
     $('#stock').html('<b>Disponibilidad:</b> <br>'+shirt.stock);
     $('').html();
 
@@ -140,6 +148,10 @@ async function displaInfo(shirt) {
 
 }
 
+function formatPrecio(number) {
+    return number.toFixed(0).replace(/\B(?=(\d{3})+(?!\d))/g, " ");
+}
+
 
 
 
@@ -201,3 +213,6 @@ async function displaInfo(shirt) {
         
         
     }
+
+
+    

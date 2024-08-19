@@ -82,20 +82,41 @@
 
 
     #entrega{
-        margin-left: 2em;
         font-weight: bold;
-        padding-top: 1em;
-        padding-bottom: 0.5em;
+        padding-top: 0.5em;
     }
+
+    #inputCantidad{
+        border-radius: 0.50em;
+        font-size: 20px;
+        padding-left: 10px;
+        height: 43px;
+        width: 80px;
+        margin-bottom: 30px;
+        margin-left: 31px;
+
+    }
+
+    #inputCantidad::-webkit-inner-spin-button, 
+    #inputCantidad::-webkit-outer-spin-button {
+      margin-right: 10px;
+      
+    }
+
+    /*Selector de entrega*/
 
     #selectorEntrega{
-       margin-left: 2em;
        padding-bottom: 0.5em;
-
+       padding-top: 0.5em;
     }
 
+    .informacionEnvio{
+        height: 140px;
+    }
+
+    /*Fin selector entrega*/
+
     #infoEntrega{
-        margin-left: 2em;
         padding-bottom: 1.5em;
     }
 
@@ -119,7 +140,7 @@
     }
 
     .add-to-cart-btn:hover {
-        background-color: rgb(30, 53, 77);
+        background-color: rgb(25, 44, 65);
     }
 
     #Enlaces{
@@ -600,6 +621,22 @@ button:hover .botonEnviar {
     
     .formulario .input-mensaje label{
         font-size: 15px;
+    }
+
+    #selectorEntrega {
+        font-size: 0.8em;
+        padding-top: 20px;
+      }
+
+    #tituloValoracion{
+        padding-top: 50px;
+    }
+
+    .nav-item{
+        font-size: 1em;
+    } 
+    .add-to-cart-btn {
+        padding: 1em 3em;
     }
 }
 

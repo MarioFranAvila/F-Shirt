@@ -1,0 +1,557 @@
+main h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    padding-top: 1.2em;
+    color: black;
+    margin-left: 50px;
+}
+
+.containerMain{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.formulario{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+  
+  }
+  
+  .formulario h1{
+    font-size: 35px;
+  }
+  
+  .formulario .input-nombre{
+    position: relative;
+    padding: 15px 1px;
+    margin-bottom: 30px;
+    margin-top: 50px;
+  }
+  
+  .formulario .input-nombre input{
+    width: 350px;
+    height: 60px;
+    border-radius: 4px;
+    font-size: 15px;
+    padding: 0 15px;
+    border: 2px solid rgb(44, 62, 80);
+    background: transparent;
+    color: black;
+    outline: none;
+  }
+  
+  .formulario .input-nombre label{
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    color: rgb(44, 62, 80);
+    font-weight: bold;
+    font-size: 18px;
+    pointer-events: none;
+    transition: .3s;
+  }
+  
+  .formulario .input-nombre > input:focus + label,
+  .formulario .input-nombre > input:valid + label {
+    left: 16px;
+    padding: 0 2px;
+    top: 0;
+    background-color: white;
+  }
+  
+  /**/
+  .formulario .input-identificacion{
+    position: relative;
+    padding: 20px 1px;
+    margin-bottom: 30px;
+  }
+  
+  .formulario .input-identificacion input{
+    width: 350px;
+    height: 60px;
+    border-radius: 4px;
+    font-size: 15px;
+    padding: 0 15px;
+    border: 2px solid rgb(44, 62, 80);
+    background: transparent;
+    color: black;
+    outline: none;
+  }
+  
+  .formulario .input-identificacion label{
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    color: rgb(44, 62, 80);
+    font-weight: bold;
+    font-size: 18px;
+    pointer-events: none;
+    transition: .3s;
+  }
+  
+  .formulario .input-identificacion > input:focus + label,
+  .formulario .input-identificacion > input:valid + label {
+    left: 16px;
+    padding: 0 2px;
+    top: 0;
+    background-color: white;
+  }
+  
+  /**/
+  .formulario .input-correo{
+    position: relative;
+    padding: 20px 1px;
+    margin-bottom: 30px;
+  }
+  
+  .formulario .input-correo .error-message {
+  display: none;
+  color: #e74c3c;
+  font-size: 14px;
+  margin-top: 5px;
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+  }
+  
+  .formulario .input-correo input:invalid + label + .error-message {
+  display: block;
+  }
+  
+  .formulario .input-correo input{
+    width: 350px;
+    height: 60px;
+    border-radius: 4px;
+    font-size: 15px;
+    padding: 0 15px;
+    border: 2px solid rgb(44, 62, 80);
+    background: transparent;
+    color: black;
+    outline: none;
+  }
+  
+  .formulario .input-correo label{
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    color: rgb(44, 62, 80);
+    font-weight: bold;
+    font-size: 18px;
+    pointer-events: none;
+    transition: .3s;
+  }
+  
+  .formulario .input-correo > input:focus + label,
+  .formulario .input-correo > input:valid + label {
+    left: 16px;
+    padding: 0 2px;
+    top: 0;
+    background-color: white;
+  }
+  
+  .formulario .input-correo input:focus + label,
+  .formulario .input-correo input.has-content + label {
+    top: 0;
+    transform: translateY(-50%);
+    background-color: white;
+  }
+  
+  /**/
+  .formulario .input-telefono{
+  position: relative;
+  padding: 20px 1px;
+  margin-bottom: 30px;
+  }
+  
+  
+  .formulario .input-telefono input{
+  width: 350px;
+  height: 60px;
+  border-radius: 4px;
+  font-size: 15px;
+  padding: 0 15px;
+  border: 2px solid rgb(44, 62, 80);
+  background: transparent;
+  color: black;
+  outline: none;
+  }
+  
+  .formulario .input-telefono label{
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
+  color: rgb(44, 62, 80);
+  font-weight: bold;
+  font-size: 18px;
+  pointer-events: none;
+  transition: .3s;
+  }
+  
+  .formulario .input-telefono > input:focus + label,
+  .formulario .input-telefono > input:valid + label {
+  left: 16px;
+  padding: 0 2px;
+  top: 0;
+  background-color: white;
+  }
+  
+  .formulario .input-telefono input:focus + label,
+  .formulario .input-telefono input.has-content + label {
+  top: 0;
+  transform: translateY(-50%);
+  background-color: white;
+  }
+
+  /**/
+  .formulario .input-codigo{
+    position: relative;
+    padding: 20px 1px;
+    }
+    
+    
+    .formulario .input-codigo input{
+    width: 350px;
+    height: 60px;
+    border-radius: 4px;
+    font-size: 15px;
+    padding: 0 15px;
+    border: 2px solid rgb(44, 62, 80);
+    background: transparent;
+    color: black;
+    outline: none;
+    }
+    
+    .formulario .input-codigo label{
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    color: rgb(44, 62, 80);
+    font-weight: bold;
+    font-size: 18px;
+    pointer-events: none;
+    transition: .3s;
+    }
+    
+    .formulario .input-codigo> input:focus + label,
+    .formulario .input-codigo > input:valid + label {
+    left: 16px;
+    padding: 0 2px;
+    top: 0;
+    background-color: white;
+    }
+    
+    .formulario .input-codigo input:focus + label,
+    .formulario .input-codigo input.has-content + label {
+    top: 0;
+    transform: translateY(-50%);
+    background-color: white;
+    }
+
+    /**/
+    .input-direccion{
+    position: relative;
+    padding: 20px 1px;
+    }
+        
+        
+    .input-direccion{
+    width: 350px;
+    height: 60px;
+    border-radius: 4px;
+    font-size: 15px;
+    padding: 0 15px;
+    border: 2px solid rgb(44, 62, 80);
+    background: transparent;
+    color: black;
+    outline: none;
+    }
+
+    /*Container Codigo Postal*/
+
+    .containerCodigoPostal{
+        display: flex;
+        display: row;
+    }
+
+    .containerCodigoPostal button{
+        margin-left: 10px;
+        margin-top: 25px;
+    }
+
+  /*Botones
+  *
+  *
+  *
+  *
+  *
+  *
+  *
+  */
+
+  #botonProcederDIV{
+    padding: 1em;
+  }
+
+  .boton button {
+    font-size: 17px;
+    font-weight: bold;
+    border: none;
+}
+
+.botonEnviar {
+    border: none;
+    display: block;
+    box-sizing: border-box;
+    border: 2px solid rgb(44, 62, 80);
+    border-radius: 0.75em;
+    padding: 0.75em 1.5em;
+    background: white;
+    color: rgb(44, 62, 80);
+    transition: 0.3s ease, 0.3s ease;
+}
+
+/* Estilo para el hover */
+.boton button:hover .botonEnviar {
+    background: rgb(44, 62, 80);
+    color: white;
+}
+
+
+/*
+*
+* Footer
+*
+*/
+
+footer{
+    margin-top: 80px;
+}
+
+/*
+*
+*
+* Entregas
+*
+*
+*/
+#entrega{
+  padding-top: 1.5em;
+}
+
+#selectorEntrega{
+    padding-bottom: 0.5em;
+    padding-top: 0.5em;
+ }
+
+ .informacionEnvio{
+     height: 140px;
+ }
+
+ /*Fin selector entrega*/
+
+ #infoEntrega{
+     padding-bottom: 1.5em;
+ }
+
+  /*Inicio entrega*/
+  #selectorEntrega :focus {
+    outline: 0;
+    border-color: rgb(44, 62, 80);
+    box-shadow: 0 0 0 4px rgb(198, 215, 231);
+  }
+  
+  #selectorEntrega div {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 0.5rem;
+  }
+  
+  #selectorEntrega input[type="radio"] {
+    clip: rect(0 0 0 0);
+    clip-path: inset(100%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+  }
+  
+  #selectorEntrega input[type="radio"]:checked + span {
+    box-shadow: 0 0 0 0.0625em rgb(44, 62, 80);
+    background-color: rgb(205, 220, 235);
+    z-index: 1;
+    color: rgb(44, 62, 80);
+  }
+  
+  #selectorEntrega label span {
+    display: block;
+    cursor: pointer;
+    background-color: #fff;
+    padding: 0.375em .75em;
+    position: relative;
+    margin-left: -1px;
+    box-shadow: 0 0 0 0.0625em rgb(44, 62, 80);
+    letter-spacing: .05em;
+    color: rgb(44, 62, 80);
+    text-align: center;
+    transition: background-color .5s ease;
+  }
+  
+  #selectorEntrega label:first-child span {
+    border-radius: .375em 0 0 .375em;
+    margin-left: 0;
+  }
+  
+  #selectorEntrega label:last-child span {
+    border-radius: 0 .375em .375em 0;
+  }
+/*Fin entrega*/
+
+/*
+*
+*
+*
+*   Card de artículos
+*
+*
+*
+*/
+
+.containerArticulos{
+  margin-top: 4em;
+}
+
+.containerArticulos .card {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  max-width: 400px;
+}
+
+.containerArticulos .titulo{
+  font-size: 2em;
+  text-align: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.containerArticulos p{
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.containerArticulos .boton {
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+  margin-left: 68px;
+}
+
+.dentroProductos{
+  height: 300px;
+  overflow-y: auto;
+  border: 1px solid #ccc;
+}
+
+.dentroProductos li {
+  border-bottom: none; /* Quita el borde sólido */
+  padding: 15px 0;
+  background-image: linear-gradient(to right, transparent, black, transparent);
+  background-position: bottom;
+  background-size: 100% 1px;
+  background-repeat: no-repeat;
+  list-style-type: none;
+}
+
+.dentroProductos ul:last-child {
+  border-bottom: none;
+}
+
+.dentroProductos ul{
+  gap: 0;
+}
+
+.dentroProductos h1{
+  font-size: 1em;
+  margin: 0;
+  padding: 0;
+}
+
+.dentroProductos #precio{
+  font-size: 0.8em;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.dentroProductos h2{
+  font-size: 1em;
+}
+
+.subtotal h2{
+  font-size: 0.8em;
+}
+
+.dentroProductos br{
+  margin: 0;
+  padding: 0;
+}
+
+.dentroProductos ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin-left: 0;
+}
+
+.dentroProductos li {
+  padding-left: 0;
+  margin-left: 20px;
+}
+
+/*Fin*/
+
+/**/
+@media (max-width: 850px) {
+  
+    .formulario{
+      padding-left: 10px;
+    }
+
+    .boton button {
+        font-size: 17px;
+        font-weight: bold;
+        border: none;
+    }
+
+    .formulario .input-codigo input{
+        width: 220px;
+    }
+
+    .formulario .input-codigo label{
+        font-size: 0.9em;
+    }
+
+    .input-direccion{
+        width: 220px;
+        margin-bottom: 50px;
+    }
+
+    .containerMain{
+      flex-direction: column-reverse;
+    }
+
+    .containerArticulos{
+      display: flex;
+      margin: 0 auto;
+    }
+  }

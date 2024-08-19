@@ -1,0 +1,39 @@
+button{
+    border: none;
+}
+
+.boton{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-right: 40px;
+    text-align: end;
+    justify-content: end;
+}
+
+.botonEnviar {
+    border: none;
+    display: block;
+    box-sizing: border-box;
+    border: 2px solid rgb(44, 62, 80);
+    border-radius: 0.75em;
+    padding: 0.75em 1.5em;
+    background: white;
+    color: rgb(44, 62, 80);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Estilo para el hover */
+button:hover .botonEnviar {
+    background: rgb(44, 62, 80);
+    color: white;
+}
+
+.boton a{
+    text-decoration: none;
+}
+
+@media (min-width: 850px){
+    .boton{
+        padding-right: 9em;
+    }
+}

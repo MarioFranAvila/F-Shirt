@@ -7,6 +7,37 @@
 .colour{
     color: rgb(15, 100, 120)
 }
+.color{
+    visibility: hidden;
+}
+
+/*Header*/
+
+/*Carrito de compras*/
+  
+
+.cart-icon i {
+    font-size: 32px; /* Ajusta el tamaño del icono */
+    color: white; /* Cambia el color del icono a blanco */
+  }
+  
+  /* Mantén o ajusta el estilo del globo rojo si es necesario */
+  .cart-icon {
+    position: relative;
+  }
+  
+  .cart-count {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    padding: 5px 10px;
+    font-size: 12px;
+    display: none;
+  }
+
 
 /*Footer*/
 

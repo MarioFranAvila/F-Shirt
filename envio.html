@@ -1,27 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>F-Shirt</title>
 
-    <!--Links-->
-    <link rel="stylesheet" href="css/HeaderFooter.css">
-    <link rel="stylesheet" href="css/estiloCambiosDevoluciones.css">
+<!--Librerias--> 
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
 
-    <!--Icono-->
-    <link rel="icon" href="img/IconoF_Shirt.png" type="image/x-icon">
+<!--Script de jquery-->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
-    <!--bootstrap -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+ <!--Links-->
+ <link rel="stylesheet" href="css/HeaderFooter.css">
+ <link rel="stylesheet" href="css/estiloEnvio.css">
 
+ <!--Icono-->
+ <link rel="icon" href="img/IconoF_Shirt.png" type="image/x-icon">
 
+ <!--bootstrap -->
+ <link rel="stylesheet" href="css/bootstrap.min.css">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
 </head>
 <body>
     
-<!--Header-->
+   <!--Header-->
 <header>
     <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
         <div class="container-fluid">
@@ -44,7 +48,6 @@
             <ul class="navbar-nav me-auto">
               <li class="nav-item">
                 <a class="nav-link" href="index.html">Inicio
-        
                 </a>
               </li>
               <li class="nav-item">
@@ -54,7 +57,7 @@
                 <a class="nav-link" href="Contacto.html">Contacto</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link " href="FAQ.html">FAQ
+                <a class="nav-link" href="FAQ.html">FAQ
                 </a>
               </li>
               <li class="nav-item">
@@ -80,57 +83,105 @@
 </header>
 <!--End Header-->
 
-<main>
+    <main>
+      <h1 class="tituloPagina">Formulario de información de entrega</h1>
+        <div class="containerMain">
+          <div class="informacionCliente">
+                <div class="formulario">
+                    
+                    <div class="input-nombre" id="input-nombre">
+                        <input type="text" id="nombreInput" onkeydown="validarSoloLetras(event)" required>
+                        <label>Ingrese su nombre</label>
+                    </div>
 
-    <h1 class="resaltar">Información de cambios y devoluciones</h1>
+                    <div class="input-identificacion" id="input-identificacion">
+                        <input type="text" id="identificacionInput" required>
+                        <label>Ingrese su identificación</label>
+                    </div>
 
-    <div class="introduccion">
-        <p>
-            En F-Shirt, nos comprometemos a garantizar su satisfacción con nuestros productos. Entendemos que en ocaciones puede ser necesario cambiar o devolver una camiseta, por lo que hemos establecido las siguientes políticas:
-        </p>
-    </div>
+                    <div class="input-correo" id="input-correo">
+                        <input type="email" id="emailInput" required>
+                        <label>Ingrese su correo electrónico</label>
+                        <span id="emailError" class="error-message"></span>
+                    </div>
+        
+                    <div class="input-telefono" id="input-telefono">
+                      <input type="text" id="telefonoInput" required>
+                      <label>Ingrese su número de teléfono</label>
+                    </div>
 
-    <h2 class="resaltar">Cambios</h2>
-    <div class="Text">
-        <ul>
-            <ol><b>1. </b>Ofrecemos cambios de talla sin costo adicional dentro de los 30 días posteriores a la fecha de compra.</ol>
-            <ol><b>2. </b>La camiseta debe estar en su estado original, sin usar, con todas las etiquetas intactas y en su empaque original.</ol>
-            <ol><b>3. </b>Solo se aceptan cambios de camisetas por una de igual o mayor valor.</ol>
-        </ul>
-    </div>
+                  <!--Código postal-->
+                  <div class="containerCodigoPostal">
+
+                    <div class="infoCodigo">
+
+                      <div class="input-codigo" id="input-codigo">
+                          <input type="text" id="codigoPostalInput" required>
+                          <label>Ingrese su código postal</label>
+                      </div>
+
+                      <div id="resultado"></div>
+                        
+                    </div>
+
+                    <div class="boton">
+                        <button onclick="buscarCodigoPostal()">
+                            <span class="botonEnviar">Buscar</span>
+                        </button>
+                    </div>
+
+                  </div>
+
+                  <!--Entrega del producto-->
+                  <div class="informacionEnvio">
+                    <div id="entrega">
+                        Consulta el método de entrega:
+                    </div>
+                    <div id="selectorEntrega">
+                        <label>
+                            <input type="radio" name="radioEntrega" value="storePickup">
+                            <span>Retirar en tienda</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="radioEntrega" value="postalDelivery">
+                            <span>Envío postal</span>
+                        </label>
+                    </div>
+                    <!-- El div que se añadirá dinámicamente -->
+                    <div id="infoEntrega"></div>
+                </div>
+                  <!-- End Entrega-->
+
+                </div> <!--div fin formulario-->
+    
+                <!--Boton para ir al pago-->
+                <div class="boton" id="botonProcederDIV">
+                    <button>
+                      <span class="botonEnviar" id="botonProceder" onclick="validarFormEnvio()">Proceder al pago</span>
+                    </button>
+                </div>
+
+                </div>
+
+                <!--Card de artículos-->
+                <div class="containerArticulos">
+                  <div class="card">
+                    <h2 class="titulo">Resumen del carrito</h2>
+                    <div id="productos"></div>
+                    <div class="boton">
+                      <button>
+                        <span class="botonEnviar" id="botonVolverCarrito" onclick="volverCarrito()">Volver al carrito</span>
+                      </button>
+                    </div>
+                    </div>
+                  </div>
+                </div>
 
 
-    <h2 class="resaltar">Devoluciones</h2>
-    <div class="Text"> 
-      <ul>
-        <ol><b>1. </b>Aceptamos devoluciones dentro de los 10 días posteriores a la recepción del producto.</ol>
-        <ol><b>2. </b>La camiseta debe de estar sin usar, sin lavar, con todas las etiquetas originales y en su empaque original.</ol>
-        <ol><b>3. </b>El reembolso no incluye los gastos de envío iniciales.</ol>
-      </ul>
-    </div>
+        </div>
+    </main>
 
-
-    <h2 class="resaltar">Proceso para cambio o devoluciones</h2>
-    <div class="Text">
-        <ul>
-            <ol><b>1. </b>Contacte a nuestro servicio al cliente para iniciar el proceso.</ol>
-            <ol><b>2. </b>Le proporcionaremos un número de autorización de devolución o cambio.</ol>
-            <ol><b>3. </b>Debe presentarse a la tienda para realizar el cambio o devolución. Debe de presentar el comprobante de compra.</ol>
-            <ol><b>4. </b>Los cambios serán realizados en un período de 3 a 5 días hábiles después de su aprobación. Las devoluciones son efectuadas inmediatamente después de su aprobación.</ol>
-
-
-        </ul>
-    </div>
-
-    <h5> <span class="resaltar">Importante:</span></h5>
-    <p>No se aceptarán cambios o devoluciones de camisetas dañadas. Artículos en oferta o de liquidación pueden tener políticas de cambio y devolución diferentes. Estas políticas quedan sujetas a cambios.</p>
-
-    <p> <br>Para cualquier consulta adicional sobre nuestras políticas de cambios y devoluciones, no dude en contactar con nuestro equipo de atención al cliente.</p>
-
-</main>
-
-<!--Footer-->
-<footer
+    <footer
           class="text-center text-lg-start text-white"
           style="background-color: rgb(44, 62, 80)"
            >
@@ -241,13 +292,15 @@
     <!-- Copyright -->
   </footer>
 
-    <!--bootstrap-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"></script>
+  <!--JS-->
+  <script src="js/envio.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+  <script src="js/globoRojoCarrito.js"></script>
 
-    <!--JS-->
-    <script src="js/globoRojoCarrito.js"></script>
+  <!--bootstrap-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+  crossorigin="anonymous"></script>
 
 </body>
 </html>

@@ -5,13 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>F-Shirt</title>
 
-    <!--Librerias-->
-    
+    <!--Script de jquery-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!--Toastify-->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
 
     <!--Links-->
     <link rel="stylesheet" href="css/HeaderFooter.css">
-    <link rel="stylesheet" href="css/estiloContacto.css">
-    <link rel="stylesheet" href="css/leaflet.css">
+    <link rel="stylesheet" href="css/estiloFactura.css">
 
     <!--Icono-->
     <link rel="icon" href="img/IconoF_Shirt.png" type="image/x-icon">
@@ -19,38 +21,23 @@
     <!--bootstrap -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-
-    <!-- css leaflet -->
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
-     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
-     crossorigin=""/>
-
-     <!-- Make sure you put this AFTER Leaflet's CSS -->
-    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
-    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
-    crossorigin=""></script>
-
-    <!--<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
--->
     
-
 </head>
 <body>
 
     <header>
         <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
             <div class="container-fluid">
-
+    
               <!--Logo-->
               <a href="index.html">
                 <img src="img/logoFShirt.png" alt="Logo" style="width: 30px; height: 30px; margin-right: 20px;">
               </a> 
               
               
-
+    
               <a class="navbar-brand" href="index.html">F-Shirt</a>
-
+    
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
@@ -60,131 +47,75 @@
                 <ul class="navbar-nav me-auto">
                   <li class="nav-item">
                     <a class="nav-link" href="index.html">Inicio
-                      <span class="visually-hidden">(current)</span>
                     </a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="Productos.html">Productos</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link active" href="Contacto.html">Contacto</a>
+                    <a class="nav-link" href="Contacto.html">Contacto</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="FAQ.html">FAQ</a>
+                    <a class="nav-link" href="FAQ.html">FAQ
+                    </a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="AcercaDe.html">Acerca de</a>
                   </li>
                     
                 </ul>
-
+    
                 <!--Carrito-->
                 <div class="d-flex">
                   <div class="cart-icon">
                       <a href="carrito.html">
                       <i class="fa fa-shopping-cart"></i>
-                      <span id="cart-count" class="cart-count"></span>
                       </a>
                   </div>
               
               </div>
-
+    
               </div>
             </div>
           </nav>
     </header>
 
-
-
     <main>
-      <section class="contacto">
-        <div class="informacion">
-            <h1>Información del local</h1>
-            <h2>Teléfonos:</h2>
-            <a href="https://wa.me/+50684733171?text=Hola%20me%20gustaría%20saber%20sobre" ><h3>+506 8473 3171</h3></a>
-            <a href="https://wa.me/+50685355208?text=Hola%20me%20gustaría%20saber%20sobre" ><h3>+506 8535 5208</h3></a>
-            <h2>Correo electrónico:</h2>
-            <a href="mailto:fshirtcontact@gmail.com?subject="><h3>fshirtcontact@gmail.com</h3></a>
-            <h2>Ubicación exacta:</h2>
-            <h3>Alajuela centro, diagonal al <br>Estadio Alejandro Morera Soto</h3>
-            <h2>Horarios:</h2>
-            <h3>De lunes a viernes, de 10 am a 8 pm</h3>
-            <h2>Ubicación por satélite:</h2>
-            <div class="contenedor-mapa">
-              <div id="map"></div>
 
-            </div>
+      <h1>Comprobante de compra</h1>
+      
+      <div class="localCompra">
+      <div class="infoEmpresa">
+            <h2>Información del local</h2>
+            <h3>Teléfonos:</h3>
+            <h4>+506 8473 3171</h4>
+            <h4>+506 8535 5208</h4>
+            <h3>Correo electrónico:</h3>
+            <h4>fshirtcontact@gmail.com</h4>
+            <h3>Ubicación exacta:</h3>
+            <h4>Alajuela centro, diagonal al Estadio Alejandro Morera Soto</h4>
+            <h3>Horarios:</h3>
+            <h4>De lunes a viernes, de 10 am a 8 pm</h4>
+      </div> <!--Fin div infoEmpresa-->
 
-        </div>
+      <div id="infoCliente">
+        
+      </div> <!--Fin div infoCliente-->
+    </div><!--Fin div -->
+      
 
-        <div class="conteiner-info">
-        <div class="formulario">
-            <h1>Comuniquese con nosotros</h1>
-            <div class="input-nombre" id="input-nombre">
-                <input type="text" id="nombreInput" onkeydown="validarSoloLetras(event)" required>
-                <label>Ingrese su nombre</label>
-            </div>
-            <div class="input-identificacion" id="input-identificacion">
-                <input type="text" id="identificacionInput" required>
-                <label>Ingrese su identificación</label>
-            </div>
-            <div class="input-correo" id="input-correo">
-                <input type="email" id="emailInput" required>
-                <label>Ingrese su correo electrónico</label>
-                <span id="emailError" class="error-message"></span>
-            </div>
+      <div class="detalleFactura">
+        <div class="cardProductos">
+          <h2 class="titulo">Resumen del carrito</h2>
+          <div id="productos"></div>
+        </div><!--Fin productos-->
+       </div><!--Fin cardProductos-->
+      </div><!--Fin div detalleFacura-->
 
-            <div class="input-telefono" id="input-telefono">
-              <input type="text" id="telefonoInput" required>
-              <label>Ingrese su número de teléfono</label>
-          </div>
-            
-            <div class="genero">
-              <label id="labelGenero">Ingrese su género</label>
-              <div>
-                    <label>
-                      <input type="radio" name="radio" checked="">
-                        <span>Mujer</span>
-                    </label>
-                    <label>
-                      <input type="radio" name="radio">
-                      <span>Hombre</span>
-                    </label>
-                    <label>
-                        <input type="radio" name="radio">
-                        <span>Otro</span>
-                    </label>
-                    
-                  </div>
-            </div>
-
-            <div class="input-fecha">
-              <input type="date" id="fechaInput" required>
-              <label id="labelFecha">Ingrese su fecha de nacimiento</label>
-              <span id="fechaError" class="error-message"></span>
-            </div>
-
-            <div class="input-mensaje">
-                <input type="text" id="mensajeInput" required>
-                <label>Ingrese el mensaje a enviar</label>
-            </div>
-            <div class="botones">
-                <button onclick="clearInputs()">
-                    <span class="button_top"> Enviar
-                    </span>
-                  </button>
-            </div>
-        </div>
-        <div class="imagen">
-            <img src="img/elDiego.jpg" alt="formulario-imagen">
-        </div>
-    </div>
-    </section>
     </main>
 
 
-
-    <footer
+  <footer
           class="text-center text-lg-start text-white"
           style="background-color: rgb(44, 62, 80)"
            >
@@ -295,15 +226,17 @@
     <!-- Copyright -->
   </footer>
 
-    <!--JS-->
-    <script src="js/mapa.js"></script>
-    <script src="js/Contacto.js"></script>
-    <script src="js/globoRojoCarrito.js"></script>
 
-    <!--bootstrap-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"></script>
+  <script src="js/globoRojoCarrito.js"></script>
+  <script src="js/factura.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
 
+  
+  <!--bootstrap-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+  crossorigin="anonymous"></script>
+  
 </body>
+
 </html>

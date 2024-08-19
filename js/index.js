@@ -44,7 +44,7 @@ function displayProducts(data) {
                             </div>
                             
                             <div id="card-Info">
-                            <p class="card-text">₡ ${shirt.precio}</p>
+                            <p class="card-text">₡ ${formatPrecio(shirt.precio)}</p>
                             <a href="" class="btn btn-primary" onclick="detalleCamiseta(${shirt.id}); return false;" >Ver Detalle</a>
                             </div>
                         </div>
@@ -56,5 +56,8 @@ function displayProducts(data) {
    
 }
 
+function formatPrecio(number) {
+    return number.toFixed(0).replace(/\B(?=(\d{3})+(?!\d))/g, " ");
+}
 
 fetchProducts()

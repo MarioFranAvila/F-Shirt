@@ -41,7 +41,7 @@ function displayProducts(data) {
                         <img src="${shirt.imagen_destacada}" class="card-img-top" alt="Camisa de futbol">
                         <div class="card-body">
                             <h5 class="card-title">${shirt.nombre}</h5>
-                            <p class="card-text">₡ ${shirt.precio}</p>
+                            <p class="card-text">₡ ${formatPrecio(shirt.precio)}</p>
                             <a href="" class="btn btn-primary" onclick="detalleCamiseta(${shirt.id}); return false;" >Ver Detalle</a>
                         </div>
                     </div>
@@ -49,6 +49,10 @@ function displayProducts(data) {
   $('#contenedorProductos').append(shirtCard)
     });
    
+}
+
+function formatPrecio(number) {
+  return number.toFixed(0).replace(/\B(?=(\d{3})+(?!\d))/g, " ");
 }
 
 fetchProducts();

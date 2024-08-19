@@ -1,0 +1,169 @@
+main h1{
+margin-top: 30px;
+margin-left: 30px;
+}
+
+.localCompra{
+    display: flex;
+    flex-direction: row;
+
+    border-bottom: none; /* Quita el borde sólido */
+    padding: 15px 0;
+    background-image: linear-gradient(to right, transparent, black, transparent);
+    background-position: bottom;
+    background-size: 100% 1px;
+    background-repeat: no-repeat;
+    list-style-type: none;
+
+    margin: 0 100px;
+
+    justify-content: space-evenly   ;
+}
+
+
+.infoEmpresa a{
+    text-decoration: none;
+    color: black;
+}
+
+.infoEmpresa h2{
+    font-size: 2em;
+}
+
+.infoEmpresa h3{
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+    margin-top: 0.4em;
+}
+
+.infoEmpresa h4{
+    font-size: 1em;
+}
+
+#infoCliente{
+    border-left: none; /* Quita el borde sólido izquierdo */
+    padding-left: 15px; /* Añade un poco de padding a la izquierda */
+    background-image: linear-gradient(to bottom, transparent, black, transparent);
+    background-position: left;
+    background-size: 1px 100%;
+    background-repeat: no-repeat;
+    list-style-type: none;
+
+    margin-left: 1em;
+}
+
+#infoCliente h2{
+    font-size: 2em;
+}
+
+.detalleFactura{
+    padding: 0 100px;
+}
+
+.card{
+    border: none;
+}
+
+.dentroProductos{
+    border: none;
+}
+
+.dentroProductos ul{
+     list-style-type: none; 
+     padding: 0;            
+     margin: 0;             
+}
+
+.dentroProductos li{
+    padding: 0;            
+    margin: 0;             
+}
+
+.dentroProductos h1{
+    font-size: 2em;
+    margin: 0;
+    padding: 0;
+    padding-top: 1em;
+}
+
+#DatosArticulo h2{
+    font-size: 1.3em;
+    margin: 0;
+    padding: 0;
+}
+
+
+#DatosArticulo {
+    margin: 0;
+    padding: 0;
+}
+
+.detalleFactura{
+    margin: 0 6em;
+}
+
+
+#TextTotal{
+    padding: 2em 0;
+    font-size: 1.5em;
+}
+
+.titulo{
+    margin-top: 1em;
+}
+
+/*
+*Media query
+*/
+@media (max-width: 850px) {
+    main h1{
+        margin: 25px 25px;
+        font-size: 2.5em;
+    }
+
+    .localCompra{
+        
+        flex-direction: column;
+        
+        border-bottom: none; /* Quita el borde sólido */
+        background-image: linear-gradient(to right, transparent, black, transparent);
+        background-position: bottom;
+        background-size: 100% 1px;
+        background-repeat: no-repeat;
+        list-style-type: none;
+
+        margin: 0 1.2em;
+    }
+
+    #infoCliente{
+        padding-left: 0;
+        border-top: none; /* Quita el borde sólido superior */
+        background-image: linear-gradient(to right, transparent, black, transparent);
+        background-position: top;
+        background-size: 100% 1px;
+        background-repeat: no-repeat;
+        list-style-type: none;
+    
+        margin-left: 0;
+        margin-top: 20px;
+        padding-top: 20px;
+    }
+    
+    .detalleFactura{
+        margin: 0 0.5em;
+        padding: 0 0.5em;
+    }
+    
+    .dentroProductos h1{
+        font-size: 1.3em;
+    }
+
+    #DatosArticulo h2{
+        font-size: 1.1em;
+    }
+
+    #TextTotal{
+        font-size: 1.3em;
+    }
+    
+}
